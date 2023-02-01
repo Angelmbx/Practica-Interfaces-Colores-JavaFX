@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practica1_layouts_javafx.HelloController">
+    <bottom>
+        <FlowPane prefHeight="7.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #f00;" text="rojo" />
+                <TextField fx:id="rojoTx" editable="false" prefWidth="100.0" />
+                <Label prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0f0;" text="verde" />
+                <TextField fx:id="verdeTx" editable="false" prefWidth="100.0" />
+                <Label prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #00f;" text="azul" textFill="WHITE" />
+                <TextField fx:id="azulTx" editable="false" prefWidth="100.0" />
+            </children>
+        </FlowPane>
+    </bottom>
+    <left>
+        <FlowPane prefHeight="366.0" prefWidth="42.0" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollBar fx:id="scrollRed" blockIncrement="1.0" max="256.0" orientation="VERTICAL" prefHeight="375.0" visibleAmount="1.0" />
+                <ScrollBar fx:id="scrollGreen" blockIncrement="1.0" max="256.0" orientation="VERTICAL" prefHeight="375.0" prefWidth="14.0" visibleAmount="1.0" />
+                <ScrollBar fx:id="scrollBlue" blockIncrement="1.0" max="256.0" minHeight="-Infinity" orientation="VERTICAL" prefHeight="375.0" prefWidth="14.0" visibleAmount="1.0" />
+            </children>
+        </FlowPane>
+    </left>
+    <right>
+        <FlowPane prefHeight="375.0" prefWidth="90.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="pickNegro" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="negro" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickGrisDark" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #444444;" text="gris oscuro" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickGris" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #666666;" text="gris" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickGrisLight" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #999999;" text="gris claro" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickBlanco" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="blanco" textAlignment="CENTER" />
+
+                <Label fx:id="pickMagenta" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #ff00ff;" text="magenta" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickAzul" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #0000ff;" text="azul" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickCian" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #00ffff;" text="cian" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickVerde" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #00ff00;" text="verde" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickAmarillo" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #ffff00;" text="amarillo" textAlignment="CENTER" />
+
+                <Label fx:id="pickNaranja" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #ff5500;" text="naranja" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickRojo" alignment="CENTER" onMouseClicked="#onColorPick" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #ff0000;" text="rojo" textAlignment="CENTER" textFill="WHITE" />
+
+                <Label fx:id="pickRosa" alignment="CENTER" prefHeight="29.0" onMouseClicked="#onColorPick" prefWidth="100.0" style="-fx-background-color: #ffaaaa;" text="rosa" textAlignment="CENTER" textFill="WHITE" />
+            </children>
+        </FlowPane>
+    </right>
+    <center>
+        <FlowPane fx:id="fondo" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(22,22,22);" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
